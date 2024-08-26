@@ -1,10 +1,10 @@
-from math import fabs, log
+from math import fabs
 
 def f(x):
-    return x**3
+    return ... #aqui vai a função principal
 
 def fi(x):
-    return -1*x**2
+    return ... #aqui vai a função φ(x)=x
 
 def metodo_iterativo(E,x1,x2):
     global x
@@ -21,15 +21,15 @@ def metodo_iterativo(E,x1,x2):
 
         x1 = x2
 
-x = x1 = -0.3
+x = x1 = ... #valor inicial
 
 x2 = None
 
-E = 0.0000001
+E = ... #precisão desejada
 
 if not (fabs(f(x1)) < E):
     metodo_iterativo(E,x1,x2)
 
-p = -1 * log(E,10)
+p = ... #precisão de casas decimais a serem impressas
 
 print(f'{x:.{p}f} é um valor válido.')

@@ -1,4 +1,4 @@
-from math import fabs, log
+from math import fabs
 
 def f(x):
     
@@ -41,6 +41,6 @@ elif condicao2:
 else:
     metodo_iterativo(E,x1,x2)
 
-p = -1 * log(E,10)
+p = ... #precisão de casas decimais a serem impressas
 
 print(f'{x:.{p}f} é um valor válido.')

@@ -1,16 +1,16 @@
-from math import fabs, log
+from math import fabs
 
 def f(x):
-    return x**3
+    return ... #aqui vai a função
 
-a = -1
-b = 1
+a = ... #menor valor do intervalo
+b = ... #mair valor do intervalo
 
 x0 = None
 
 E = 0.00000001
 
-p = -1 * log(E,10)
+p = ... #precisão de casas decimais a serem impressas
 
 for k in range(1,1000000):
     

@@ -1,10 +1,10 @@
-from math import fabs, log, tan, sqrt, cos
+from math import fabs 
 
 def F(x):
-    return tan(x) - sqrt(x-12)
+    return ... #aqui vai a função
 
 def f(x):
-    return (1/cos(x))**2 - (sqrt(x-12)**(-0.5))/2
+    return ... #aqui vai a derivada da função
 
 def metodo_iterativo(E,x1,x2):
     global x
@@ -19,18 +19,18 @@ def metodo_iterativo(E,x1,x2):
             x = x2
             break
 
-        print(f'{x2:.3f}')
-
         x1 = x2
 
 
-x = x1 = 13
+x = x1 = ... #valor inicial
 
 x2 = None
 
-E = 0.001
+E = ... #precisão desejada
 
 if not (fabs(F(x1)) < E):
     metodo_iterativo(E,x1,x2)
 
-print(f'{x:.3f}')
+p = ... #precisão de casas decimais a serem impressas
+
+print(f'{x:.{p}f}')

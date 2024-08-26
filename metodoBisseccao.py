@@ -1,4 +1,4 @@
-from math import log, fabs, floor
+from math import fabs
 
 def f(x):
     return ... #aqui vai a função
@@ -13,9 +13,8 @@ x0 = None
 E = ... #precisão desejada na forma de 10^(-n), 
         #sendo n natural
 
-MAX_ITERACOES = floor((log(b-a,10)-log(E,10))/log(2,10)) + 1
 
-for k in range(1,MAX_ITERACOES):
+for k in range(1,10000):
     if fabs(b-a) < E:
         break
 
@@ -28,6 +27,6 @@ for k in range(1,MAX_ITERACOES):
     else:
         b = x0
 
-p = -1 * log(E,10)
+p = ... #precisão de casas decimais a serem impressas
 
 print(f'Qualquer x do intervalo [{a:.{p}f},{b:.{p}f}] é válido.')
